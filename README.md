@@ -5,11 +5,16 @@
 implementation for describing, producing, consuming, and visualizing RESTful web services.
 View [demo](http://petstore.swagger.wordnik.com/).
 
-__{swagger-express}__ is a simple and clean solution to integrate swagger with express.
+__{swagger-express}__ is a simple and clean solution to integrate swagger with express. It enables to use swagger API
+descriptions inside your routes or controller.
 
 ## Installation
 
     $ npm install -g swagger-express
+
+    Add swagger ui to dependencies, e.g.
+
+    $  "swagger-ui": "^2.1.0-M2"
 
 ## Quick Start
 
@@ -39,12 +44,12 @@ var swagger = require('swagger-express');
 
 app.configure(function(){
   ...
-  app.use(swagger.init(app, {
+  app.use(swagger.init(app, express, {
     apiVersion: '1.0',
     swaggerVersion: '1.0',
     swaggerURL: '/swagger',
     swaggerJSON: '/api-docs.json',
-    swaggerUI: './public/swagger/',
+    swaggerUI: './node_modules/swagger-ui/dist',
     basePath: 'http://localhost:3000',
     info: {
       title: 'swagger-express sample app',
