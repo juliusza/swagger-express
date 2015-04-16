@@ -9,10 +9,10 @@
     "doctrine": "*",
     "js-yaml": "~2.1.0",
     "coffee-script": "*",
-    "async": "~0.2.7"
+    "async": "~0.2.7",
+    "swagger-ui": "^2.1.0-M2"
   },
   "devDependencies": {
-    "express": "3.5.1",
     "jade": "*",
     "jshint": "*"
   },

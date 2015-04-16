@@ -12,10 +12,6 @@ descriptions inside your routes or controller.
 
     $ npm install -g swagger-express
 
-    Add swagger ui to dependencies, e.g.
-
-    $  "swagger-ui": "^2.1.0-M2"
-
 ## Quick Start
 
 Configure {swagger-express} as express middleware.
